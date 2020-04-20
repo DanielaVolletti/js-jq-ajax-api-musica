@@ -1,0 +1,53 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+  background: #252E38;
+}
+
+.box {
+	margin: 5% auto;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container {
+	width: calc((100% / 4) - 4%);
+	height: 250px;
+	margin: 1% 2%;
+	padding: 10px;
+	text-align: center;
+	background: #2E3A46;
+}
+
+.album {
+	height: 50%;
+	width: 100%;
+}
+
+.album img {
+	height: 100%;
+	width: 100%;
+}
+
+.titolo {
+	height: 50%;
+  padding-top: 20px;
+}
+
+h3 {
+	font-size: 15px;
+	color: white;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.titolo h5 {
+	color: gray;
+}
