@@ -1,3 +1,4 @@
+/* regole generali */
 * {
 	margin: 0;
 	padding: 0;
@@ -8,6 +9,7 @@ body {
   background: #252E38;
 }
 
+/* regole header */
 header {
   width: 100%;
   height: 50px;
@@ -25,7 +27,7 @@ header {
   height: 100%;
 }
 
-
+/* regole box contenente i cd */
 .box {
 	margin: 5% auto;
 	width: 50%;
@@ -35,6 +37,7 @@ header {
 	flex-wrap: wrap;
 }
 
+/* regole contenitori singoli cd */
 .container {
 	width: calc((100% / 4) - 4%);
 	height: 250px;

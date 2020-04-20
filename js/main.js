@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
 
-
+  // chiamata ajax per creare cd
   $.ajax({
     url: "https://flynn.boolean.careers/exercises/api/array/music",
     method: "GET",
@@ -13,7 +13,7 @@ $(document).ready(function () {
       // variabili per handlebars
       var source = $('.album-template').html();
       var template = Handlebars.compile(source);
-
+      // ciclo for per estrapolare singoli cd dai quali prendere elementi di ciascuno
       for (var i = 0; i < album.length; i++) {
         var singoloAlbum = album[i];
         var context = {
@@ -23,6 +23,7 @@ $(document).ready(function () {
           "year": singoloAlbum.year,
         };
         var html = template(context);
+        // inserisco i dischi in html
         $('.box').append(html);
       }
     },
