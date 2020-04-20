@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dischi musicali</title>
+  </head>
+  <body>
+    <!-- header in alto con logo -->
+    <header>
+      <div class="intestazione">
+        <img src="img/logo.png" alt="logo spotify">
+      </div>
+    </header>
+
+    <!-- selezione opzioni musicali -->
+    <div class="filtro-genere">
+      <label>Filtro album per genere</label>
+      <select class="" name="">
+        <option value=""></option>
+        <option value="pop">Pop</option>
+        <option value="rock">Rock</option>
+        <option value="metal">Metal</option>
+        <option value="jazz">Jazz</option>
+      </select>
+    </div>
+
+    <!-- box container dischi -->
+    <div class="box">
+
+		</div>
+
+    <!-- template per creare dischi-->
+		<script class="album-template" type="text/x-handlebars-template">
+				<div class="container" data-genre="{{genre}}">
+					<div class="album">
+            <img src="{{cover}}" alt="cover disco">
+					</div>
+					<div class="titolo">
+						<h3>{{title}}</h3>
+						<h5>{{artist}}</h5>
+						<h5>{{year}}</h5>
+					</div>
+				</div>
+		</script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
