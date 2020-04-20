@@ -3,9 +3,6 @@
 
 $(document).ready(function () {
 
-  // variabili per handlebars
-  var source = $('.album-template').html();
-  var template = Handlebars.compile(source);
 
   $.ajax({
     url: "https://flynn.boolean.careers/exercises/api/array/music",
@@ -13,13 +10,17 @@ $(document).ready(function () {
     success: function(data,stato) {
       var album = data.response;
       console.log(album);
+      // variabili per handlebars
+      var source = $('.album-template').html();
+      var template = Handlebars.compile(source);
+
       for (var i = 0; i < album.length; i++) {
         var singoloAlbum = album[i];
         var context = {
           "cover": singoloAlbum.poster,
           "title": singoloAlbum.title,
           "artist": singoloAlbum.author,
-          "year": singoloAlbum.year
+          "year": singoloAlbum.year,
         };
         var html = template(context);
         $('.box').append(html);

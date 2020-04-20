@@ -8,6 +8,24 @@ body {
   background: #252E38;
 }
 
+header {
+  width: 100%;
+  height: 50px;
+  background-color: #2E3A46;
+  display: flex;
+  align-items: center;
+}
+
+.intestazione {
+  margin-left: 20%;
+  height: 80%;
+}
+
+.intestazione img {
+  height: 100%;
+}
+
+
 .box {
 	margin: 5% auto;
 	width: 50%;
@@ -49,5 +67,5 @@ h3 {
 }
 
 .titolo h5 {
-	color: gray;
+	color: grey;
 }
